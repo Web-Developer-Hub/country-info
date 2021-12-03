@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(226, 90, 0);
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.mainDiv{
+    width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.childDiv{
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    transition: 0.5s;
+
+}
+.childDiv:hover{
+    color: green;
+    box-shadow: 5px 5px 25px 5px lightgray;
+    border-radius: 5px;
+}
+.childDiv img{
+    width: 300px;
+}
+
+/* this style for responsive view... */
+@media (min-width: 280px) and (max-width: 360px) {
+    h1{
+        width: 300px;
+        font-size: 15px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 350px;
+    }
+    .childDiv img{
+        width: 250px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 420px) {
+    h1{
+        width: 300px;
+        font-size: 16px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 360px;
+    }
+    .childDiv img{
+        width: 300px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 520px) {
+    h1{
+        width: 380px;
+        font-size: 17px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 390px;
+    }
+    .childDiv img{
+        width: 350px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+
+
+@media (min-width: 521px) and (max-width: 720px) {
+    h1{
+        width: 450px;
+        font-size: 17px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 470px;
+    }
+    .childDiv img{
+        width: 420px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 920px) {
+    h1{
+        width: 500px;
+        font-size: 17px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 700px;
+    }
+    .childDiv img{
+        width: 260px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 800px) {
+    h1{
+        width: 500px;
+        font-size: 17px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 700px;
+    }
+    .childDiv img{
+        width: 260px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 920px) {
+    h1{
+        width: 650px;
+        font-size: 17px;
+    }
+    .mainDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 800px;
+    }
+    .childDiv img{
+        width: 320px;
+    }
+    .childDiv{
+        padding: 15px;
+        margin: 10px;
+    }
+}
